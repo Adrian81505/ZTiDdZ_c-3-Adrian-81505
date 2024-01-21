@@ -1,0 +1,13 @@
+import base64
+
+def encode_base64(text):
+    return base64.b64encode(text.encode()).decode()
+
+# Użytkownik wprowadza tekst
+user_input = input("Wprowadź tekst do szyfrowania: ")
+
+# Szyfrowanie tekstu
+encoded_text = encode_base64(user_input)
+
+# Wyświetlenie zaszyfrowanego tekstu
+print("Zaszyfrowany tekst:", encoded_text)
